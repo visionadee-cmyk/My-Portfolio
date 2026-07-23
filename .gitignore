@@ -50,8 +50,6 @@ logs/
 
 # Directories
 video/
-public/video/
-public/Images/
 public/video/*.mp4
 public/video/*.mov
 public/video/*.avi
