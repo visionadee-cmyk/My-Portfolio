@@ -51,19 +51,19 @@ function Achievements() {
       name: 'HACCP Certification',
       issuer: 'Food Safety Authority',
       year: '2020',
-      image: '/Images/port certi (10).jpg'
+      image: '/Images/port certi (10).optimized.jpg'
     },
     {
       name: 'Food Safety Manager',
       issuer: 'ServSafe',
       year: '2019',
-      image: '/Images/port certi (13).jpg'
+      image: '/Images/port certi (13).optimized.jpg'
     },
     {
       name: 'Luxury Hospitality Standards',
       issuer: 'Leading Hotels',
       year: '2021',
-      image: '/Images/port certi (12).jpg'
+      image: '/Images/port certi (12).optimized.jpg'
     }
   ]
 

@@ -3,31 +3,121 @@ import './WebApps.css'
 function WebApps() {
   const webApps = [
     {
-      name: 'FreshTrack Pro',
-      description: 'Comprehensive inventory management system for F&B operations. Track stock levels, expiry dates, supplier information, and generate automated reports.',
-      image: '/Images/FRESH TRACK PRO.jpg',
-      category: 'Business Management',
-      features: ['Real-time Inventory Tracking', 'Expiry Alerts', 'Supplier Management', 'Automated Reporting'],
+      name: 'Park BBQ Kitchen',
+      description: 'Booking system for Park BBQ Kitchen events. Reserve the venue for your special occasions with easy online booking.',
+      image: 'https://parkbbqkitchen.hawadaily.com/logo.png',
+      category: 'Booking System',
+      features: ['Online Booking', 'Event Management', 'User Manual', 'FAQ Support'],
       status: 'Live',
-      link: '#'
+      link: 'https://parkbbqkitchen.hawadaily.com/'
     },
     {
-      name: 'FurniCraft Pro',
-      description: 'Furniture design and customization tool for interior designers. Create 3D models, customize dimensions, and generate professional renders.',
-      image: '/Images/logo (5).jpg',
+      name: 'Hawainn Khabaru',
+      description: 'Modern Maldives news portal with full Dhivehi RTL support and PWA experience for the Maldivian community.',
+      image: 'https://ahdhamu-news.vercel.app/favicon.svg',
+      category: 'News & Media',
+      features: ['Dhivehi RTL Support', 'PWA Experience', 'Modern Design', 'Daily Updates'],
+      status: 'Live',
+      link: 'https://ahdhamu-news.vercel.app/'
+    },
+    {
+      name: 'Maa Wadi Mv',
+      description: 'Smart furniture planning tool with precise measurements, material optimization, and instant pricing for custom furniture.',
+      image: 'https://maa-wadi-mv.vercel.app/logo.png',
       category: 'Design Tool',
-      features: ['3D Modeling', 'Custom Dimensions', 'Material Library', 'Export Options'],
-      status: 'Beta',
-      link: '#'
+      features: ['Material Optimization', 'Instant Pricing', 'Custom Designs', 'Quote Generation'],
+      status: 'Live',
+      link: 'https://maa-wadi-mv.vercel.app/'
     },
     {
-      name: 'Pantry Recipe Pro',
-      description: 'Recipe management and meal planning application for culinary professionals. Organize recipes, plan menus, and calculate nutritional information.',
-      image: '/Images/logo (7).png',
-      category: 'Culinary App',
-      features: ['Recipe Database', 'Menu Planning', 'Nutritional Analysis', 'Shopping Lists'],
-      status: 'Development',
-      link: '#'
+      name: 'Loavashi Hub',
+      description: 'Modern cafe and restaurant management system with POS, admin dashboard, inventory, staff, reports, and PWA support.',
+      image: 'https://loavashihub-cafe.vercel.app/logo.jpeg',
+      category: 'Restaurant Management',
+      features: ['POS System', 'Inventory Management', 'Staff Management', 'PWA Support'],
+      status: 'Live',
+      link: 'https://loavashihub-cafe.vercel.app/'
+    },
+    {
+      name: 'Hawaiin Elevation',
+      description: 'Complete tender and procurement management system for Hawaiin Elevation Pvt Ltd with PWA support.',
+      image: 'https://hawaiin-elevation.vercel.app/logo/icon-192.png',
+      category: 'Business Management',
+      features: ['Tender Management', 'Procurement Tracking', 'PWA Support', 'Reporting'],
+      status: 'Live',
+      link: 'https://hawaiin-elevation.vercel.app/'
+    },
+    {
+      name: 'Ungu Viyafaari',
+      description: 'Business management system for comprehensive business operations and administration.',
+      image: 'https://ungu-viyafaari-mv.vercel.app/favicon.svg',
+      category: 'Business Management',
+      features: ['Business Operations', 'Administration', 'PWA Support', 'Modern UI'],
+      status: 'Live',
+      link: 'https://ungu-viyafaari-mv.vercel.app/'
+    },
+    {
+      name: 'HR Factory',
+      description: 'Comprehensive HR management platform for employee management, payroll, and HR operations.',
+      image: 'https://hawaain-hr-pro.vercel.app/logo.png',
+      category: 'HR Management',
+      features: ['Employee Management', 'Payroll', 'HR Operations', 'PWA Support'],
+      status: 'Live',
+      link: 'https://hawaain-hr-pro.vercel.app/'
+    },
+    {
+      name: 'Park Pro-Active',
+      description: 'Engineering operations management system for efficient project and operations tracking.',
+      image: 'https://park-pro-active-eta.vercel.app/logo.png',
+      category: 'Engineering',
+      features: ['Operations Management', 'Project Tracking', 'PWA Support', 'Reporting'],
+      status: 'Live',
+      link: 'https://park-pro-active-eta.vercel.app/'
+    },
+    {
+      name: 'Fixora',
+      description: 'Computerized Maintenance Management System built for zero downtime with comprehensive asset tracking.',
+      image: 'https://fixora-topaz.vercel.app/logo/logo.png',
+      category: 'Maintenance',
+      features: ['Asset Management', 'Maintenance Tracking', 'Zero Downtime', 'PWA Support'],
+      status: 'Live',
+      link: 'https://fixora-topaz.vercel.app/'
+    },
+    {
+      name: 'MNDF Toolkit Pro',
+      description: 'Tool and asset management system designed for MNDF operations with comprehensive tracking capabilities.',
+      image: 'https://mndf-toolkit-pro.vercel.app/logo.png',
+      category: 'Asset Management',
+      features: ['Tool Management', 'Asset Tracking', 'PWA Support', 'Reporting'],
+      status: 'Live',
+      link: 'https://mndf-toolkit-pro.vercel.app/'
+    },
+    {
+      name: 'Fannu Bazaar',
+      description: 'Service marketplace connecting customers with skilled workers for various services.',
+      image: 'https://fannu-bazaar.vercel.app/logo.png',
+      category: 'Marketplace',
+      features: ['Service Booking', 'Worker Profiles', 'PWA Support', 'Reviews'],
+      status: 'Live',
+      link: 'https://fannu-bazaar.vercel.app/'
+    },
+    {
+      name: 'Exam Lab MV',
+      description: 'O Level & A Level exam practice platform for students in the Maldives with comprehensive study materials.',
+      image: 'https://exam-lab-maldives.vercel.app/logo.png',
+      category: 'Education',
+      features: ['Exam Practice', 'Study Materials', 'PWA Support', 'Progress Tracking'],
+      status: 'Live',
+      link: 'https://exam-lab-maldives.vercel.app/'
+    },
+    {
+      name: 'Hawa Daily',
+      description: 'Modern Maldives news portal with full Dhivehi RTL support and PWA experience. Provides daily news updates and content for the Maldivian community.',
+      image: 'https://www.hawadaily.com/logo.png',
+      category: 'News & Media',
+      features: ['Dhivehi RTL Support', 'PWA Experience', 'Modern Mobile Design', 'Daily News Updates'],
+      status: 'Live',
+      link: 'https://www.hawadaily.com/'
     }
   ]
 

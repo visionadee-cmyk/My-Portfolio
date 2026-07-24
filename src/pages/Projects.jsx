@@ -1,54 +1,67 @@
+import { Link } from 'react-router-dom'
 import './Projects.css'
 
 function Projects() {
-  const projects = [
+  const projectLinks = [
     {
-      title: '3D Architecture Design',
-      category: '3D Design',
-      image: '/Images/website images/3D architecture.jpg',
-      description: 'Stunning architectural visualizations and interior designs using Blender and 3D modeling software.',
-      technologies: ['Blender', 'SketchUp', 'AutoCAD'],
-      year: '2024'
+      title: '3D Architecture',
+      icon: 'fa-building',
+      path: '/architecture-3d',
+      images: [
+        '/Images/website images/3D architecture.optimized.jpg',
+        '/Images/Blender Image (1).optimized.jpg',
+        '/Images/sketch image (1).optimized.jpg',
+        '/Images/Floor Plan (1).optimized.jpg'
+      ],
+      stats: { images: 53, videos: 1 }
     },
     {
-      title: 'Hospitality Training Programs',
-      category: 'Training',
-      image: '/Images/training (1).jpg',
-      description: 'Comprehensive training programs for F&B staff, focusing on service excellence and operational efficiency.',
-      technologies: ['Training Design', 'SOP Development', 'Quality Assurance'],
-      year: '2023'
+      title: 'Training',
+      icon: 'fa-chalkboard-teacher',
+      path: '/training',
+      images: [
+        '/Images/training (1).optimized.jpg',
+        '/Images/training (2).optimized.jpg',
+        '/Images/training (3).optimized.jpg',
+        '/Images/training (4).optimized.jpg'
+      ],
+      stats: { images: 86 }
     },
     {
-      title: 'Professional Photography',
-      category: 'Photography',
-      image: '/Images/website images/Photography.jpg',
-      description: 'High-quality photography for events, promotions, and marketing materials in luxury hospitality settings.',
-      technologies: ['Adobe Lightroom', 'Photoshop', 'DSLR Photography'],
-      year: '2024'
+      title: 'Videography',
+      icon: 'fa-video',
+      path: '/videography',
+      images: [
+        '/Images/website images/Videography.optimized.jpg',
+        '/Images/Golf bar_01.optimized.jpg',
+        '/Images/Golf bar_02.optimized.jpg',
+        '/Images/Golf bar_03.optimized.jpg'
+      ],
+      stats: { videos: 12 }
     },
     {
-      title: 'Video Production',
-      category: 'Videography',
-      image: '/Images/website images/Videography.png',
-      description: 'Creative video content for promotional campaigns, event coverage, and social media marketing.',
-      technologies: ['Premiere Pro', 'After Effects', 'Final Cut Pro'],
-      year: '2023'
-    },
-    {
-      title: 'Content Creation',
-      category: 'Digital Marketing',
-      image: '/Images/International Womens Day (11).jpg',
-      description: 'Engaging digital content including social media posts, blog articles, and marketing collateral.',
-      technologies: ['Canva', 'Social Media', 'Copywriting'],
-      year: '2024'
+      title: 'Photography',
+      icon: 'fa-camera',
+      path: '/photography',
+      images: [
+        '/Images/website images/Photography.optimized.jpg',
+        '/Images/Landscape (1).optimized.jpg',
+        '/Images/portrait (1).optimized.jpg',
+        '/Images/Landscape (2).optimized.jpg'
+      ],
+      stats: { images: 195 }
     },
     {
       title: 'Graphic Design',
-      category: 'Design',
-      image: '/Images/Logo making.png',
-      description: 'Brand identity design, logos, flyers, and marketing materials for hospitality businesses.',
-      technologies: ['Illustrator', 'Photoshop', 'InDesign'],
-      year: '2024'
+      icon: 'fa-palette',
+      path: '/graphic-design',
+      images: [
+        '/Images/logo.optimized.jpg',
+        '/Images/logo (5).optimized.jpg',
+        '/Images/flyers (1).optimized.jpg',
+        '/Images/brochures (1).optimized.jpg'
+      ],
+      stats: { images: 148 }
     }
   ]
 
@@ -57,27 +70,40 @@ function Projects() {
       <div className="container">
         <div className="page-header">
           <h1 className="page-title">My Projects</h1>
-          <p className="page-subtitle">A showcase of my work across hospitality, design, and technology</p>
+          <p className="page-subtitle">Explore my work across different domains</p>
         </div>
 
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-                <div className="project-category">{project.category}</div>
-              </div>
-              <div className="project-content">
-                <div className="project-year">{project.year}</div>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="project-technologies">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">{tech}</span>
-                  ))}
+        <div className="services">
+          {projectLinks.map((project, index) => (
+            <Link key={index} to={project.path} className="services-cell animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="project-images">
+                {project.images.map((img, imgIndex) => (
+                  <div key={imgIndex} className="project-image-item">
+                    <img src={img} alt={`${project.title} ${imgIndex + 1}`} />
+                  </div>
+                ))}
+                <div className="icon-wrapper">
+                  <i className={`fas ${project.icon}`}></i>
                 </div>
               </div>
-            </div>
+              <div className="services-cell-text">
+                <span className="proj_text">{project.title}</span>
+                <div className="project-stats">
+                  {project.stats.images && (
+                    <span className="stat-item">
+                      <i className="fas fa-image"></i>
+                      {project.stats.images} Images
+                    </span>
+                  )}
+                  {project.stats.videos && (
+                    <span className="stat-item">
+                      <i className="fas fa-video"></i>
+                      {project.stats.videos} Videos
+                    </span>
+                  )}
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

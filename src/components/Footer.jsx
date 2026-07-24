@@ -12,6 +12,14 @@ function Footer() {
     { path: '/skills', label: 'Skills' },
   ]
 
+  const projectLinks = [
+    { path: '/architecture-3d', label: '3D Architecture' },
+    { path: '/training', label: 'Training' },
+    { path: '/videography', label: 'Videography' },
+    { path: '/photography', label: 'Photography' },
+    { path: '/graphic-design', label: 'Graphic Design' },
+  ]
+
   const socialLinks = [
     { name: 'LinkedIn', icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/abdul-rahman-gasim-54862182/' },
     { name: 'Facebook', icon: 'fab fa-facebook', url: 'https://facebook.com/Abdulrahman' },
@@ -50,6 +58,18 @@ function Footer() {
             <h4>Quick Links</h4>
             <ul className="footer-nav">
               {quickLinks.map((link) => (
+                <li key={link.path}>
+                  <Link to={link.path}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Projects Section */}
+          <div className="footer-section footer-links">
+            <h4>Projects</h4>
+            <ul className="footer-nav">
+              {projectLinks.map((link) => (
                 <li key={link.path}>
                   <Link to={link.path}>{link.label}</Link>
                 </li>

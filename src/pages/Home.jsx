@@ -5,33 +5,38 @@ function Home() {
   const featuredProjects = [
     {
       title: '3D Architecture',
-      image: '/Images/website images/3D architecture.jpg',
+      image: '/Images/website images/3D architecture.optimized.jpg',
       icon: 'fa-cube',
-      description: 'Stunning architectural visualizations and 3D designs'
+      description: 'Stunning architectural visualizations and 3D designs',
+      path: '/architecture-3d'
     },
     {
       title: 'Training Programs',
-      image: '/Images/training (1).jpg',
+      image: '/Images/training (1).optimized.jpg',
       icon: 'fa-chalkboard-teacher',
-      description: 'Comprehensive hospitality training solutions'
+      description: 'Comprehensive hospitality training solutions',
+      path: '/training'
     },
     {
       title: 'Photography',
-      image: '/Images/website images/Photography.jpg',
+      image: '/Images/website images/Photography.optimized.jpg',
       icon: 'fa-camera',
-      description: 'Professional photography for events and promotions'
+      description: 'Professional photography for events and promotions',
+      path: '/photography'
     },
     {
       title: 'Videography',
-      image: '/Images/website images/Videography.png',
+      image: '/Images/website images/Videography.optimized.png',
       icon: 'fa-video',
-      description: 'Creative video production and editing'
+      description: 'Creative video production and editing',
+      path: '/videography'
     },
     {
-      title: 'Content Creation',
-      image: '/Images/International Womens Day (11).jpg',
-      icon: 'fa-pen-fancy',
-      description: 'Engaging digital content and storytelling'
+      title: 'Graphic Design',
+      image: '/Images/logo.optimized.jpg',
+      icon: 'fa-palette',
+      description: 'Brand identity, logos, and marketing materials',
+      path: '/graphic-design'
     }
   ]
 
@@ -47,19 +52,19 @@ function Home() {
   const webApps = [
     {
       name: 'FreshTrack Pro',
-      image: '/Images/FRESH TRACK PRO.jpg',
+      image: '/Images/FRESH TRACK PRO.optimized.jpg',
       description: 'Inventory management system for F&B operations',
       category: 'Web Application'
     },
     {
       name: 'FurniCraft Pro',
-      image: '/Images/logo (5).jpg',
+      image: '/Images/logo (5).optimized.jpg',
       description: 'Furniture design and customization tool',
       category: 'Design Tool'
     },
     {
       name: 'Pantry Recipe Pro',
-      image: '/Images/logo (7).png',
+      image: '/Images/logo (7).optimized.png',
       description: 'Recipe management and meal planning app',
       category: 'Culinary App'
     }
@@ -126,7 +131,7 @@ function Home() {
           </div>
           <div className="projects-grid">
             {featuredProjects.map((project, index) => (
-              <div key={index} className="project-card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Link key={index} to={project.path} className="project-card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="project-image">
                   <img src={project.image} alt={project.title} />
                   <div className="project-overlay">
@@ -139,7 +144,7 @@ function Home() {
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -203,7 +208,7 @@ function Home() {
         <div className="container">
           <div className="kuredu-card animate-fade-in">
             <div className="kuredu-image">
-              <img src="/Images/Rettey (6).jpg" alt="Featured on Kuredu" />
+              <img src="/Images/Rettey (6).optimized.jpg" alt="Featured on Kuredu" />
             </div>
             <div className="kuredu-content">
               <div className="kuredu-badge">

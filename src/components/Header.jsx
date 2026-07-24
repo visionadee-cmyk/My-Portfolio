@@ -15,6 +15,7 @@ function Header() {
     { path: '/achievements', label: 'Achievements', icon: 'fa-trophy' },
     { path: '/cv', label: 'CV', icon: 'fa-file-alt' },
     { path: '/webapps', label: 'Apps', icon: 'fa-mobile-alt' },
+    { path: '/content-creator', label: 'Content', icon: 'fa-bullhorn' },
   ]
 
   return (

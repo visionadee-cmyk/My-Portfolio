@@ -37,6 +37,10 @@
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border);
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .webapp-card:hover {
@@ -46,15 +50,27 @@
 
 .webapp-image {
   position: relative;
-  height: 200px;
+  width: 100%;
+  padding-bottom: 100%;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .webapp-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
   transition: transform var(--transition-slow);
+  display: block;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .webapp-card:hover .webapp-image img {
@@ -89,6 +105,7 @@
 
 .webapp-content {
   padding: var(--spacing-xl);
+  margin: 0;
 }
 
 .webapp-category {
@@ -230,10 +247,6 @@
   
   .webapps-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .webapp-image {
-    height: 180px;
   }
   
   .webapp-content {
