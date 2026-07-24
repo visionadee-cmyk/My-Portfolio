@@ -26,7 +26,7 @@ function Home() {
     },
     {
       title: 'Videography',
-      image: '/Images/website images/Videography.optimized.png',
+      image: '/Images/website images/Videography.optimized.jpg',
       icon: 'fa-video',
       description: 'Creative video production and editing',
       path: '/videography'
