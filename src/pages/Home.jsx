@@ -70,6 +70,87 @@ function Home() {
     }
   ]
 
+  const photographySamples = [
+    { src: '/Images/Landscape (1).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
+    { src: '/Images/portrait (1).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' },
+    { src: '/Images/Landscape (2).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
+    { src: '/Images/portrait (2).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' }
+  ]
+
+  const graphicDesignSamples = [
+    { src: '/Images/logo (1).optimized.jpg', alt: 'Logo Design', category: 'Logos' },
+    { src: '/Images/flyers (1).optimized.jpg', alt: 'Flyer Design', category: 'Flyers' },
+    { src: '/Images/brochures (1).optimized.jpg', alt: 'Brochure Design', category: 'Brochures' },
+    { src: '/Images/banners (1).optimized.jpg', alt: 'Banner Design', category: 'Banners' }
+  ]
+
+  const architecture3DSamples = [
+    { src: '/Images/Blender Image (1).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
+    { src: '/Images/sketch image (1).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' },
+    { src: '/Images/Blender Image (2).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
+    { src: '/Images/sketch image (2).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' }
+  ]
+
+  const trainingSamples = [
+    { src: '/Images/training (1).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/training (2).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/training (3).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/training (4).optimized.jpg', alt: 'Training Session', category: 'Hospitality' }
+  ]
+
+  const videographySamples = [
+    { src: '/Images/website images/Videography.optimized.jpg', alt: 'Video Production', category: 'Production' },
+    { src: '/Images/Golf bar_01.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
+    { src: '/Images/Golf bar_02.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
+    { src: '/Images/Golf bar_03.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' }
+  ]
+
+  const services = [
+    {
+      icon: 'fa-hotel',
+      title: 'Hospitality Management',
+      description: '20+ years of experience in luxury resort operations, pre-opening, and staff training',
+      color: '#6366f1'
+    },
+    {
+      icon: 'fa-cube',
+      title: '3D Design & Visualization',
+      description: 'Architectural visualizations using Blender, SketchUp, and CorelDRAW for stunning presentations',
+      color: '#10b981'
+    },
+    {
+      icon: 'fa-code',
+      title: 'Web Development',
+      description: 'Full-stack web applications with modern technologies and responsive designs',
+      color: '#f59e0b'
+    },
+    {
+      icon: 'fa-palette',
+      title: 'Graphic Design',
+      description: 'Brand identity, logos, marketing materials, and visual communication solutions',
+      color: '#ef4444'
+    },
+    {
+      icon: 'fa-chalkboard-teacher',
+      title: 'Training & Development',
+      description: 'Comprehensive hospitality training programs and professional development workshops',
+      color: '#8b5cf6'
+    },
+    {
+      icon: 'fa-video',
+      title: 'Video Production',
+      description: 'Professional videography, editing, and content creation for promotional materials',
+      color: '#06b6d4'
+    }
+  ]
+
+  const achievements = [
+    { icon: 'fa-trophy', title: 'Employee of the Year', description: 'Kuredu Island Resort 2019' },
+    { icon: 'fa-certificate', title: 'Certified Trainer', description: 'Maldives Tourism Authority' },
+    { icon: 'fa-star', title: '5-Star Service', description: 'Multiple Resort Recognition' },
+    { icon: 'fa-award', title: 'Innovation Award', description: 'Digital Solutions 2023' }
+  ]
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -176,6 +257,52 @@ function Home() {
         </div>
       </section>
 
+      {/* Services Section */}
+      <section className="section services-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Services I Offer</h2>
+            <p className="section-subtitle">Comprehensive solutions for your business needs</p>
+          </div>
+          <div className="services-grid">
+            {services.map((service, index) => (
+              <div key={index} className="service-card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="service-icon" style={{ background: service.color }}>
+                  <i className={`fas ${service.icon}`}></i>
+                </div>
+                <div className="service-content">
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="section achievements-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Achievements & Recognition</h2>
+            <p className="section-subtitle">Awards and certifications throughout my career</p>
+          </div>
+          <div className="achievements-grid">
+            {achievements.map((achievement, index) => (
+              <div key={index} className="achievement-card animate-slide-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="achievement-icon">
+                  <i className={`fas ${achievement.icon}`}></i>
+                </div>
+                <div className="achievement-content">
+                  <h4>{achievement.title}</h4>
+                  <p>{achievement.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Web Apps Section */}
       <section className="section webapps-section">
         <div className="container">
@@ -199,6 +326,146 @@ function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Preview Section */}
+      <section className="section portfolio-preview-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Portfolio Preview</h2>
+            <p className="section-subtitle">A glimpse into my creative work across different disciplines</p>
+          </div>
+
+          {/* Photography Preview */}
+          <div className="portfolio-category animate-fade-in">
+            <div className="category-header">
+              <div className="category-icon">
+                <i className="fas fa-camera"></i>
+              </div>
+              <div className="category-info">
+                <h3>Photography</h3>
+                <p>195+ images capturing landscapes and portraits</p>
+              </div>
+              <Link to="/photography" className="btn btn-outline">
+                View All <i className="fas fa-arrow-right"></i>
+              </Link>
+            </div>
+            <div className="portfolio-grid">
+              {photographySamples.map((item, index) => (
+                <div key={index} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} />
+                  <div className="portfolio-overlay">
+                    <span className="portfolio-category">{item.category}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Graphic Design Preview */}
+          <div className="portfolio-category animate-fade-in">
+            <div className="category-header">
+              <div className="category-icon">
+                <i className="fas fa-palette"></i>
+              </div>
+              <div className="category-info">
+                <h3>Graphic Design</h3>
+                <p>148+ designs including logos, flyers, brochures, and banners</p>
+              </div>
+              <Link to="/graphic-design" className="btn btn-outline">
+                View All <i className="fas fa-arrow-right"></i>
+              </Link>
+            </div>
+            <div className="portfolio-grid">
+              {graphicDesignSamples.map((item, index) => (
+                <div key={index} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} />
+                  <div className="portfolio-overlay">
+                    <span className="portfolio-category">{item.category}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* 3D Architecture Preview */}
+          <div className="portfolio-category animate-fade-in">
+            <div className="category-header">
+              <div className="category-icon">
+                <i className="fas fa-cube"></i>
+              </div>
+              <div className="category-info">
+                <h3>3D Architecture</h3>
+                <p>53+ architectural visualizations using Blender and SketchUp</p>
+              </div>
+              <Link to="/architecture-3d" className="btn btn-outline">
+                View All <i className="fas fa-arrow-right"></i>
+              </Link>
+            </div>
+            <div className="portfolio-grid">
+              {architecture3DSamples.map((item, index) => (
+                <div key={index} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} />
+                  <div className="portfolio-overlay">
+                    <span className="portfolio-category">{item.category}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Training Preview */}
+          <div className="portfolio-category animate-fade-in">
+            <div className="category-header">
+              <div className="category-icon">
+                <i className="fas fa-chalkboard-teacher"></i>
+              </div>
+              <div className="category-info">
+                <h3>Training Programs</h3>
+                <p>86+ training sessions for hospitality professionals</p>
+              </div>
+              <Link to="/training" className="btn btn-outline">
+                View All <i className="fas fa-arrow-right"></i>
+              </Link>
+            </div>
+            <div className="portfolio-grid">
+              {trainingSamples.map((item, index) => (
+                <div key={index} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} />
+                  <div className="portfolio-overlay">
+                    <span className="portfolio-category">{item.category}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Videography Preview */}
+          <div className="portfolio-category animate-fade-in">
+            <div className="category-header">
+              <div className="category-icon">
+                <i className="fas fa-video"></i>
+              </div>
+              <div className="category-info">
+                <h3>Videography</h3>
+                <p>12+ professional video productions and edits</p>
+              </div>
+              <Link to="/videography" className="btn btn-outline">
+                View All <i className="fas fa-arrow-right"></i>
+              </Link>
+            </div>
+            <div className="portfolio-grid">
+              {videographySamples.map((item, index) => (
+                <div key={index} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} />
+                  <div className="portfolio-overlay">
+                    <span className="portfolio-category">{item.category}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
