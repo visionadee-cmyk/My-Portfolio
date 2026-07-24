@@ -5,28 +5,28 @@ function Home() {
   const featuredProjects = [
     {
       title: '3D Architecture',
-      image: '/Images/website images/3D architecture.optimized.jpg',
+      image: '/Images/website%20images/3D%20architecture.optimized.jpg',
       icon: 'fa-cube',
       description: 'Stunning architectural visualizations and 3D designs',
       path: '/architecture-3d'
     },
     {
       title: 'Training Programs',
-      image: '/Images/training (1).optimized.jpg',
+      image: '/Images/training%20(1).optimized.jpg',
       icon: 'fa-chalkboard-teacher',
       description: 'Comprehensive hospitality training solutions',
       path: '/training'
     },
     {
       title: 'Photography',
-      image: '/Images/website images/Photography.optimized.jpg',
+      image: '/Images/website%20images/Photography.optimized.jpg',
       icon: 'fa-camera',
       description: 'Professional photography for events and promotions',
       path: '/photography'
     },
     {
       title: 'Videography',
-      image: '/Images/website images/Videography.optimized.jpg',
+      image: '/Images/website%20images/Videography.optimized.jpg',
       icon: 'fa-video',
       description: 'Creative video production and editing',
       path: '/videography'
@@ -55,57 +55,57 @@ function Home() {
   const webApps = [
     {
       name: 'FreshTrack Pro',
-      image: '/Images/FRESH TRACK PRO.optimized.jpg',
+      image: '/Images/FRESH%20TRACK%20PRO.optimized.jpg',
       description: 'Inventory management system for F&B operations',
       category: 'Web Application'
     },
     {
       name: 'FurniCraft Pro',
-      image: '/Images/logo (5).optimized.jpg',
+      image: '/Images/logo%20(5).optimized.jpg',
       description: 'Furniture design and customization tool',
       category: 'Design Tool'
     },
     {
       name: 'Pantry Recipe Pro',
-      image: '/Images/logo (7).optimized.jpg',
+      image: '/Images/logo%20(7).optimized.jpg',
       description: 'Recipe management and meal planning app',
       category: 'Culinary App'
     }
   ]
 
   const photographySamples = [
-    { src: '/Images/Landscape (1).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
-    { src: '/Images/portrait (1).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' },
-    { src: '/Images/Landscape (2).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
-    { src: '/Images/portrait (2).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' }
+    { src: '/Images/Landscape%20(1).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
+    { src: '/Images/portrait%20(1).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' },
+    { src: '/Images/Landscape%20(2).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
+    { src: '/Images/portrait%20(2).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' }
   ]
 
   const graphicDesignSamples = [
-    { src: '/Images/logo (1).optimized.jpg', alt: 'Logo Design', category: 'Logos' },
-    { src: '/Images/flyers (1).optimized.jpg', alt: 'Flyer Design', category: 'Flyers' },
-    { src: '/Images/brochures (1).optimized.jpg', alt: 'Brochure Design', category: 'Brochures' },
-    { src: '/Images/banners (1).optimized.jpg', alt: 'Banner Design', category: 'Banners' }
+    { src: '/Images/logo%20(1).optimized.jpg', alt: 'Logo Design', category: 'Logos' },
+    { src: '/Images/flyers%20(1).optimized.jpg', alt: 'Flyer Design', category: 'Flyers' },
+    { src: '/Images/brochures%20(1).optimized.jpg', alt: 'Brochure Design', category: 'Brochures' },
+    { src: '/Images/banners%20(1).optimized.jpg', alt: 'Banner Design', category: 'Banners' }
   ]
 
   const architecture3DSamples = [
-    { src: '/Images/Blender Image (1).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
-    { src: '/Images/sketch image (1).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' },
-    { src: '/Images/Blender Image (2).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
-    { src: '/Images/sketch image (2).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' }
+    { src: '/Images/Blender%20Image%20(1).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
+    { src: '/Images/sketch%20image%20(1).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' },
+    { src: '/Images/Blender%20Image%20(2).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
+    { src: '/Images/sketch%20image%20(2).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' }
   ]
 
   const trainingSamples = [
-    { src: '/Images/training (1).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (2).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (3).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (4).optimized.jpg', alt: 'Training Session', category: 'Hospitality' }
+    { src: '/Images/training%20(1).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/training%20(2).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/training%20(3).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/training%20(4).optimized.jpg', alt: 'Training Session', category: 'Hospitality' }
   ]
 
   const videographySamples = [
-    { src: '/Images/website images/Videography.optimized.jpg', alt: 'Video Production', category: 'Production' },
-    { src: '/Images/Golf bar_01.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
-    { src: '/Images/Golf bar_02.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
-    { src: '/Images/Golf bar_03.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' }
+    { src: '/Images/website%20images/Videography.optimized.jpg', alt: 'Video Production', category: 'Production' },
+    { src: '/Images/Golf%20bar_01.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
+    { src: '/Images/Golf%20bar_02.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
+    { src: '/Images/Golf%20bar_03.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' }
   ]
 
   const services = [
@@ -478,7 +478,7 @@ function Home() {
         <div className="container">
           <div className="kuredu-card animate-fade-in">
             <div className="kuredu-image">
-              <img src="/Images/Rettey (6).optimized.jpg" alt="Featured on Kuredu" />
+              <img src="/Images/Rettey%20(6).optimized.jpg" alt="Featured on Kuredu" />
             </div>
             <div className="kuredu-content">
               <div className="kuredu-badge">
