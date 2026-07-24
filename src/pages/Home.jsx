@@ -40,6 +40,9 @@ function Home() {
     }
   ]
 
+  // Debug: Log image paths
+  console.log('Featured Projects:', featuredProjects.map(p => ({ title: p.title, image: p.image })))
+
   const skills = [
     { name: 'Food & Beverage Management', level: 95, icon: 'fa-utensils' },
     { name: '3D Design', level: 85, icon: 'fa-cube' },
