@@ -1,39 +1,84 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 
+// Import images
+import architectureImage from '/Images/website images/3D architecture.optimized.jpg'
+import trainingImage from '/Images/training (1).optimized.jpg'
+import photographyImage from '/Images/website images/Photography.optimized.jpg'
+import videographyImage from '/Images/website images/Videography.optimized.png'
+import graphicDesignImage from '/Images/logo.optimized.jpg'
+
+// Web app images
+import freshTrackImage from '/Images/FRESH TRACK PRO.optimized.jpg'
+import furniCraftImage from '/Images/logo (5).optimized.jpg'
+import pantryRecipeImage from '/Images/logo (7).optimized.png'
+
+// Photography samples
+import landscape1 from '/Images/Landscape (1).optimized.jpg'
+import portrait1 from '/Images/portrait (1).optimized.jpg'
+import landscape2 from '/Images/Landscape (2).optimized.jpg'
+import portrait2 from '/Images/portrait (2).optimized.jpg'
+
+// Graphic design samples
+import logo1 from '/Images/logo (1).optimized.jpg'
+import flyer1 from '/Images/flyers (1).optimized.jpg'
+import brochure1 from '/Images/brochures (1).optimized.jpg'
+import banner1 from '/Images/banners (1).optimized.jpg'
+
+// Architecture 3D samples
+import blender1 from '/Images/Blender Image (1).optimized.jpg'
+import sketch1 from '/Images/sketch image (1).optimized.jpg'
+import blender2 from '/Images/Blender Image (2).optimized.jpg'
+import sketch2 from '/Images/sketch image (2).optimized.jpg'
+
+// Training samples
+import training1 from '/Images/training (1).optimized.jpg'
+import training2 from '/Images/training (2).optimized.jpg'
+import training3 from '/Images/training (3).optimized.jpg'
+import training4 from '/Images/training (4).optimized.jpg'
+
+// Videography samples
+import videographyMain from '/Images/website images/Videography.optimized.jpg'
+import golfBar1 from '/Images/Golf bar_01.optimized.jpg'
+import golfBar2 from '/Images/Golf bar_02.optimized.jpg'
+import golfBar3 from '/Images/Golf bar_03.optimized.jpg'
+
+// Kuredu image
+import kureduImage from '/Images/Rettey (6).optimized.jpg'
+
 function Home() {
   const featuredProjects = [
     {
       title: '3D Architecture',
-      image: '/Images/website images/3D architecture.optimized.jpg',
+      image: architectureImage,
       icon: 'fa-cube',
       description: 'Stunning architectural visualizations and 3D designs',
       path: '/architecture-3d'
     },
     {
       title: 'Training Programs',
-      image: '/Images/training (1).optimized.jpg',
+      image: trainingImage,
       icon: 'fa-chalkboard-teacher',
       description: 'Comprehensive hospitality training solutions',
       path: '/training'
     },
     {
       title: 'Photography',
-      image: '/Images/website images/Photography.optimized.jpg',
+      image: photographyImage,
       icon: 'fa-camera',
       description: 'Professional photography for events and promotions',
       path: '/photography'
     },
     {
       title: 'Videography',
-      image: '/Images/website images/Videography.optimized.png',
+      image: videographyImage,
       icon: 'fa-video',
       description: 'Creative video production and editing',
       path: '/videography'
     },
     {
       title: 'Graphic Design',
-      image: '/Images/logo.optimized.jpg',
+      image: graphicDesignImage,
       icon: 'fa-palette',
       description: 'Brand identity, logos, and marketing materials',
       path: '/graphic-design'
@@ -52,57 +97,57 @@ function Home() {
   const webApps = [
     {
       name: 'FreshTrack Pro',
-      image: '/Images/FRESH TRACK PRO.optimized.jpg',
+      image: freshTrackImage,
       description: 'Inventory management system for F&B operations',
       category: 'Web Application'
     },
     {
       name: 'FurniCraft Pro',
-      image: '/Images/logo (5).optimized.jpg',
+      image: furniCraftImage,
       description: 'Furniture design and customization tool',
       category: 'Design Tool'
     },
     {
       name: 'Pantry Recipe Pro',
-      image: '/Images/logo (7).optimized.png',
+      image: pantryRecipeImage,
       description: 'Recipe management and meal planning app',
       category: 'Culinary App'
     }
   ]
 
   const photographySamples = [
-    { src: '/Images/Landscape (1).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
-    { src: '/Images/portrait (1).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' },
-    { src: '/Images/Landscape (2).optimized.jpg', alt: 'Landscape Photography', category: 'Landscape' },
-    { src: '/Images/portrait (2).optimized.jpg', alt: 'Portrait Photography', category: 'Portrait' }
+    { src: landscape1, alt: 'Landscape Photography', category: 'Landscape' },
+    { src: portrait1, alt: 'Portrait Photography', category: 'Portrait' },
+    { src: landscape2, alt: 'Landscape Photography', category: 'Landscape' },
+    { src: portrait2, alt: 'Portrait Photography', category: 'Portrait' }
   ]
 
   const graphicDesignSamples = [
-    { src: '/Images/logo (1).optimized.jpg', alt: 'Logo Design', category: 'Logos' },
-    { src: '/Images/flyers (1).optimized.jpg', alt: 'Flyer Design', category: 'Flyers' },
-    { src: '/Images/brochures (1).optimized.jpg', alt: 'Brochure Design', category: 'Brochures' },
-    { src: '/Images/banners (1).optimized.jpg', alt: 'Banner Design', category: 'Banners' }
+    { src: logo1, alt: 'Logo Design', category: 'Logos' },
+    { src: flyer1, alt: 'Flyer Design', category: 'Flyers' },
+    { src: brochure1, alt: 'Brochure Design', category: 'Brochures' },
+    { src: banner1, alt: 'Banner Design', category: 'Banners' }
   ]
 
   const architecture3DSamples = [
-    { src: '/Images/Blender Image (1).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
-    { src: '/Images/sketch image (1).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' },
-    { src: '/Images/Blender Image (2).optimized.jpg', alt: 'Blender 3D', category: 'Blender' },
-    { src: '/Images/sketch image (2).optimized.jpg', alt: 'SketchUp Design', category: 'SketchUp' }
+    { src: blender1, alt: 'Blender 3D', category: 'Blender' },
+    { src: sketch1, alt: 'SketchUp Design', category: 'SketchUp' },
+    { src: blender2, alt: 'Blender 3D', category: 'Blender' },
+    { src: sketch2, alt: 'SketchUp Design', category: 'SketchUp' }
   ]
 
   const trainingSamples = [
-    { src: '/Images/training (1).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (2).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (3).optimized.jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (4).optimized.jpg', alt: 'Training Session', category: 'Hospitality' }
+    { src: training1, alt: 'Training Session', category: 'Hospitality' },
+    { src: training2, alt: 'Training Session', category: 'Hospitality' },
+    { src: training3, alt: 'Training Session', category: 'Hospitality' },
+    { src: training4, alt: 'Training Session', category: 'Hospitality' }
   ]
 
   const videographySamples = [
-    { src: '/Images/website images/Videography.optimized.jpg', alt: 'Video Production', category: 'Production' },
-    { src: '/Images/Golf bar_01.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
-    { src: '/Images/Golf bar_02.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' },
-    { src: '/Images/Golf bar_03.optimized.jpg', alt: 'Video Thumbnail', category: 'Production' }
+    { src: videographyMain, alt: 'Video Production', category: 'Production' },
+    { src: golfBar1, alt: 'Video Thumbnail', category: 'Production' },
+    { src: golfBar2, alt: 'Video Thumbnail', category: 'Production' },
+    { src: golfBar3, alt: 'Video Thumbnail', category: 'Production' }
   ]
 
   const services = [
@@ -475,7 +520,7 @@ function Home() {
         <div className="container">
           <div className="kuredu-card animate-fade-in">
             <div className="kuredu-image">
-              <img src="/Images/Rettey (6).optimized.jpg" alt="Featured on Kuredu" />
+              <img src={kureduImage} alt="Featured on Kuredu" />
             </div>
             <div className="kuredu-content">
               <div className="kuredu-badge">
