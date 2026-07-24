@@ -10,11 +10,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        assetFileNames: 'assets/[name]-[hash][extname]'
-      }
-    }
+    copyPublicDir: true
   },
   publicDir: 'public',
   base: '/'
