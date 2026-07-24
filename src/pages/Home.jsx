@@ -64,7 +64,7 @@ function Home() {
     },
     {
       name: 'Pantry Recipe Pro',
-      image: '/Images/logo (7).optimized.png',
+      image: '/Images/logo (7).optimized.jpg',
       description: 'Recipe management and meal planning app',
       category: 'Culinary App'
     }
