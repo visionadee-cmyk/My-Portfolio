@@ -1,77 +1,39 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 
-// Import images using ES6 imports for proper Vite bundling
-import architectureImage from '/Images/website images/3D architecture.optimized.jpg'
-import trainingImage from '/Images/training (1).optimized.jpg'
-import photographyImage from '/Images/website images/Photography.optimized.jpg'
-import videographyImage from '/Images/website images/Videography.optimized.jpg'
-import graphicDesignImage from '/Images/logo.optimized.jpg'
-
-import freshTrackImage from '/Images/FRESH TRACK PRO.optimized.jpg'
-import furniCraftImage from '/Images/logo (5).optimized.jpg'
-import pantryRecipeImage from '/Images/logo (7).optimized.jpg'
-
-import landscape1 from '/Images/Landscape (1).optimized.jpg'
-import portrait1 from '/Images/portrait (1).optimized.jpg'
-import landscape2 from '/Images/Landscape (2).optimized.jpg'
-import portrait2 from '/Images/portrait (2).optimized.jpg'
-
-import logo1 from '/Images/logo (1).optimized.jpg'
-import flyer1 from '/Images/flyers (1).optimized.jpg'
-import brochure1 from '/Images/brochures (1).optimized.jpg'
-import banner1 from '/Images/banners (1).optimized.jpg'
-
-import blender1 from '/Images/Blender Image (1).optimized.jpg'
-import sketch1 from '/Images/sketch image (1).optimized.jpg'
-import blender2 from '/Images/Blender Image (2).optimized.jpg'
-import sketch2 from '/Images/sketch image (2).optimized.jpg'
-
-import training1 from '/Images/training (1).optimized.jpg'
-import training2 from '/Images/training (2).optimized.jpg'
-import training3 from '/Images/training (3).optimized.jpg'
-import training4 from '/Images/training (4).optimized.jpg'
-
-import videographyMain from '/Images/website images/Videography.optimized.jpg'
-import golfBar1 from '/Images/Golf bar_01.optimized.jpg'
-import golfBar2 from '/Images/Golf bar_02.optimized.jpg'
-import golfBar3 from '/Images/Golf bar_03.optimized.jpg'
-
-import kureduImage from '/Images/Rettey (6).optimized.jpg'
-
 function Home() {
   const featuredProjects = [
     {
       title: '3D Architecture',
-      image: architectureImage,
+      image: new URL('/Images/website images/3D architecture.optimized.jpg', import.meta.url).href,
       icon: 'fa-cube',
       description: 'Stunning architectural visualizations and 3D designs',
       path: '/architecture-3d'
     },
     {
       title: 'Training Programs',
-      image: trainingImage,
+      image: new URL('/Images/training (1).optimized.jpg', import.meta.url).href,
       icon: 'fa-chalkboard-teacher',
       description: 'Comprehensive hospitality training solutions',
       path: '/training'
     },
     {
       title: 'Photography',
-      image: photographyImage,
+      image: new URL('/Images/website images/Photography.optimized.jpg', import.meta.url).href,
       icon: 'fa-camera',
       description: 'Professional photography for events and promotions',
       path: '/photography'
     },
     {
       title: 'Videography',
-      image: videographyImage,
+      image: new URL('/Images/website images/Videography.optimized.jpg', import.meta.url).href,
       icon: 'fa-video',
       description: 'Creative video production and editing',
       path: '/videography'
     },
     {
       title: 'Graphic Design',
-      image: graphicDesignImage,
+      image: new URL('/Images/logo.optimized.jpg', import.meta.url).href,
       icon: 'fa-palette',
       description: 'Brand identity, logos, and marketing materials',
       path: '/graphic-design'
@@ -93,58 +55,60 @@ function Home() {
   const webApps = [
     {
       name: 'FreshTrack Pro',
-      image: freshTrackImage,
+      image: new URL('/Images/FRESH TRACK PRO.optimized.jpg', import.meta.url).href,
       description: 'Inventory management system for F&B operations',
       category: 'Web Application'
     },
     {
       name: 'FurniCraft Pro',
-      image: furniCraftImage,
+      image: new URL('/Images/logo (5).optimized.jpg', import.meta.url).href,
       description: 'Furniture design and customization tool',
       category: 'Design Tool'
     },
     {
       name: 'Pantry Recipe Pro',
-      image: pantryRecipeImage,
+      image: new URL('/Images/logo (7).optimized.jpg', import.meta.url).href,
       description: 'Recipe management and meal planning app',
       category: 'Culinary App'
     }
   ]
 
   const photographySamples = [
-    { src: landscape1, alt: 'Landscape Photography', category: 'Landscape' },
-    { src: portrait1, alt: 'Portrait Photography', category: 'Portrait' },
-    { src: landscape2, alt: 'Landscape Photography', category: 'Landscape' },
-    { src: portrait2, alt: 'Portrait Photography', category: 'Portrait' }
+    { src: new URL('/Images/Landscape (1).optimized.jpg', import.meta.url).href, alt: 'Landscape Photography', category: 'Landscape' },
+    { src: new URL('/Images/portrait (1).optimized.jpg', import.meta.url).href, alt: 'Portrait Photography', category: 'Portrait' },
+    { src: new URL('/Images/Landscape (2).optimized.jpg', import.meta.url).href, alt: 'Landscape Photography', category: 'Landscape' },
+    { src: new URL('/Images/portrait (2).optimized.jpg', import.meta.url).href, alt: 'Portrait Photography', category: 'Portrait' }
   ]
 
   const graphicDesignSamples = [
-    { src: logo1, alt: 'Logo Design', category: 'Logos' },
-    { src: flyer1, alt: 'Flyer Design', category: 'Flyers' },
-    { src: brochure1, alt: 'Brochure Design', category: 'Brochures' },
-    { src: banner1, alt: 'Banner Design', category: 'Banners' }
+    { src: new URL('/Images/logo (1).optimized.jpg', import.meta.url).href, alt: 'Logo Design', category: 'Logos' },
+    { src: new URL('/Images/flyers (1).optimized.jpg', import.meta.url).href, alt: 'Flyer Design', category: 'Flyers' },
+    { src: new URL('/Images/brochures (1).optimized.jpg', import.meta.url).href, alt: 'Brochure Design', category: 'Brochures' },
+    { src: new URL('/Images/banners (1).optimized.jpg', import.meta.url).href, alt: 'Banner Design', category: 'Banners' }
   ]
 
   const architecture3DSamples = [
-    { src: blender1, alt: 'Blender 3D', category: 'Blender' },
-    { src: sketch1, alt: 'SketchUp Design', category: 'SketchUp' },
-    { src: blender2, alt: 'Blender 3D', category: 'Blender' },
-    { src: sketch2, alt: 'SketchUp Design', category: 'SketchUp' }
+    { src: new URL('/Images/Blender Image (1).optimized.jpg', import.meta.url).href, alt: 'Blender 3D', category: 'Blender' },
+    { src: new URL('/Images/sketch image (1).optimized.jpg', import.meta.url).href, alt: 'SketchUp Design', category: 'SketchUp' },
+    { src: new URL('/Images/Blender Image (2).optimized.jpg', import.meta.url).href, alt: 'Blender 3D', category: 'Blender' },
+    { src: new URL('/Images/sketch image (2).optimized.jpg', import.meta.url).href, alt: 'SketchUp Design', category: 'SketchUp' }
   ]
 
   const trainingSamples = [
-    { src: training1, alt: 'Training Session', category: 'Hospitality' },
-    { src: training2, alt: 'Training Session', category: 'Hospitality' },
-    { src: training3, alt: 'Training Session', category: 'Hospitality' },
-    { src: training4, alt: 'Training Session', category: 'Hospitality' }
+    { src: new URL('/Images/training (1).optimized.jpg', import.meta.url).href, alt: 'Training Session', category: 'Hospitality' },
+    { src: new URL('/Images/training (2).optimized.jpg', import.meta.url).href, alt: 'Training Session', category: 'Hospitality' },
+    { src: new URL('/Images/training (3).optimized.jpg', import.meta.url).href, alt: 'Training Session', category: 'Hospitality' },
+    { src: new URL('/Images/training (4).optimized.jpg', import.meta.url).href, alt: 'Training Session', category: 'Hospitality' }
   ]
 
   const videographySamples = [
-    { src: videographyMain, alt: 'Video Production', category: 'Production' },
-    { src: golfBar1, alt: 'Video Thumbnail', category: 'Production' },
-    { src: golfBar2, alt: 'Video Thumbnail', category: 'Production' },
-    { src: golfBar3, alt: 'Video Thumbnail', category: 'Production' }
+    { src: new URL('/Images/website images/Videography.optimized.jpg', import.meta.url).href, alt: 'Video Production', category: 'Production' },
+    { src: new URL('/Images/Golf bar_01.optimized.jpg', import.meta.url).href, alt: 'Video Thumbnail', category: 'Production' },
+    { src: new URL('/Images/Golf bar_02.optimized.jpg', import.meta.url).href, alt: 'Video Thumbnail', category: 'Production' },
+    { src: new URL('/Images/Golf bar_03.optimized.jpg', import.meta.url).href, alt: 'Video Thumbnail', category: 'Production' }
   ]
+
+  const kureduImage = new URL('/Images/Rettey (6).optimized.jpg', import.meta.url).href
 
   const services = [
     {
