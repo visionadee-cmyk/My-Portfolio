@@ -9,8 +9,8 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    copyPublicDir: true
+    assetsDir: 'assets'
   },
-  publicDir: 'public'
+  publicDir: 'public',
+  base: '/'
 })
