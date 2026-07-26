@@ -12,7 +12,7 @@ function Home() {
     },
     {
       title: 'Training Programs',
-      image: '/Images/training (1).jpg',
+      image: '/Images/International Womens Day (1).jpg',
       icon: 'fa-chalkboard-teacher',
       description: 'Comprehensive hospitality training solutions',
       path: '/training'
@@ -26,7 +26,7 @@ function Home() {
     },
     {
       title: 'Videography',
-      image: '/Images/Golf bar_01.jpg',
+      image: '/Images/Audience.jpg',
       icon: 'fa-video',
       description: 'Creative video production and editing',
       path: '/videography'
@@ -42,6 +42,7 @@ function Home() {
 
   // Debug: Log image paths
   console.log('Featured Projects:', featuredProjects.map(p => ({ title: p.title, image: p.image })))
+  console.log('Testing image load:', new Image().src = '/Images/Blender Image (1).jpg')
 
   const skills = [
     { name: 'Food & Beverage Management', level: 95, icon: 'fa-utensils' },
@@ -89,23 +90,23 @@ function Home() {
 
   const architecture3DSamples = [
     { src: '/Images/Blender Image (1).jpg', alt: 'Blender 3D', category: 'Blender' },
-    { src: '/Images/sketch image (1).jpg', alt: 'SketchUp Design', category: 'SketchUp' },
     { src: '/Images/Blender Image (2).jpg', alt: 'Blender 3D', category: 'Blender' },
-    { src: '/Images/sketch image (2).jpg', alt: 'SketchUp Design', category: 'SketchUp' }
+    { src: '/Images/Blender Image (3).jpg', alt: 'Blender 3D', category: 'Blender' },
+    { src: '/Images/Blender Image (4).jpg', alt: 'Blender 3D', category: 'Blender' }
   ]
 
   const trainingSamples = [
-    { src: '/Images/training (1).jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (2).jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (3).jpg', alt: 'Training Session', category: 'Hospitality' },
-    { src: '/Images/training (4).jpg', alt: 'Training Session', category: 'Hospitality' }
+    { src: '/Images/International Womens Day (1).jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/International Womens Day (2).jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/International Womens Day (3).jpg', alt: 'Training Session', category: 'Hospitality' },
+    { src: '/Images/International Womens Day (4).jpg', alt: 'Training Session', category: 'Hospitality' }
   ]
 
   const videographySamples = [
-    { src: '/Images/Landscape (1).jpg', alt: 'Video Production', category: 'Production' },
-    { src: '/Images/Golf bar_01.jpg', alt: 'Video Thumbnail', category: 'Production' },
-    { src: '/Images/Golf bar_02.jpg', alt: 'Video Thumbnail', category: 'Production' },
-    { src: '/Images/Golf bar_03.jpg', alt: 'Video Thumbnail', category: 'Production' }
+    { src: '/Images/Audience.jpg', alt: 'Video Production', category: 'Production' },
+    { src: '/Images/Sebs Map.jpg', alt: 'Video Thumbnail', category: 'Production' },
+    { src: '/Images/Sebs farm.jpg', alt: 'Video Thumbnail', category: 'Production' },
+    { src: '/Images/Ship wreck.jpg', alt: 'Video Thumbnail', category: 'Production' }
   ]
 
   const services = [

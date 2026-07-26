@@ -10,7 +10,7 @@ function Projects() {
       images: [
         '/Images/Blender Image (1).jpg',
         '/Images/Blender Image (2).jpg',
-        '/Images/sketch image (1).jpg',
+        '/Images/Blender Image (3).jpg',
         '/Images/Floor Plan (1).png'
       ],
       stats: { images: 53, videos: 1 }
@@ -20,10 +20,10 @@ function Projects() {
       icon: 'fa-chalkboard-teacher',
       path: '/training',
       images: [
-        '/Images/training (1).jpg',
-        '/Images/training (2).jpg',
-        '/Images/training (3).jpg',
-        '/Images/training (4).jpg'
+        '/Images/International Womens Day (1).jpg',
+        '/Images/International Womens Day (2).jpg',
+        '/Images/International Womens Day (3).jpg',
+        '/Images/International Womens Day (4).jpg'
       ],
       stats: { images: 86 }
     },
@@ -32,10 +32,10 @@ function Projects() {
       icon: 'fa-video',
       path: '/videography',
       images: [
-        '/Images/Landscape (1).jpg',
-        '/Images/Golf bar_01.jpg',
-        '/Images/Golf bar_02.jpg',
-        '/Images/Golf bar_03.jpg'
+        '/Images/Audience.jpg',
+        '/Images/Sebs Map.jpg',
+        '/Images/Sebs farm.jpg',
+        '/Images/Ship wreck.jpg'
       ],
       stats: { videos: 12 }
     },

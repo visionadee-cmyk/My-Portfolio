@@ -6,8 +6,8 @@ function Training() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const trainingImages = Array.from({ length: 86 }, (_, i) => ({
-    src: `/Images/training (${i + 1}).optimized.jpg`,
+  const trainingImages = Array.from({ length: 16 }, (_, i) => ({
+    src: `/Images/International Womens Day (${i + 1}).jpg`,
     alt: `Training Image ${i + 1}`,
     title: `Training Session ${i + 1}`
   }))

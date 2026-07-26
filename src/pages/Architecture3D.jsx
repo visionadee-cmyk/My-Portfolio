@@ -13,17 +13,28 @@ function Architecture3D() {
     title: `Blender Project ${i + 1}`
   }))
 
-  const sketchUpImages = Array.from({ length: 19 }, (_, i) => ({
-    src: `/Images/sketch image (${i + 1}).jpg`,
-    alt: `SketchUp Project ${i + 1}`,
-    title: `SketchUp Project ${i + 1}`
-  }))
+  const sketchUpImages = [
+    { src: '/Images/Blender Image (1).jpg', alt: 'SketchUp Project 1', title: 'SketchUp Project 1' },
+    { src: '/Images/Blender Image (2).jpg', alt: 'SketchUp Project 2', title: 'SketchUp Project 2' },
+    { src: '/Images/Blender Image (3).jpg', alt: 'SketchUp Project 3', title: 'SketchUp Project 3' },
+    { src: '/Images/Blender Image (4).jpg', alt: 'SketchUp Project 4', title: 'SketchUp Project 4' }
+  ]
 
-  const corelDrawImages = Array.from({ length: 13 }, (_, i) => ({
-    src: `/Images/Floor Plan (${i + 1}).jpg`,
-    alt: `Floor Plan ${i + 1}`,
-    title: `Floor Plan ${i + 1}`
-  }))
+  const corelDrawImages = [
+    { src: '/Images/Floor Plan (1).png', alt: 'Floor Plan 1', title: 'Floor Plan 1' },
+    { src: '/Images/Floor Plan (3).jpg', alt: 'Floor Plan 3', title: 'Floor Plan 3' },
+    { src: '/Images/Floor Plan (4).JPG', alt: 'Floor Plan 4', title: 'Floor Plan 4' },
+    { src: '/Images/Floor Plan (5).jpg', alt: 'Floor Plan 5', title: 'Floor Plan 5' },
+    { src: '/Images/Floor Plan (6).jpg', alt: 'Floor Plan 6', title: 'Floor Plan 6' },
+    { src: '/Images/Floor Plan (7).jpg', alt: 'Floor Plan 7', title: 'Floor Plan 7' },
+    { src: '/Images/Floor Plan (8).jpg', alt: 'Floor Plan 8', title: 'Floor Plan 8' },
+    { src: '/Images/Floor Plan (9).jpg', alt: 'Floor Plan 9', title: 'Floor Plan 9' },
+    { src: '/Images/Floor Plan (10).jpg', alt: 'Floor Plan 10', title: 'Floor Plan 10' },
+    { src: '/Images/Floor Plan (11).jpg', alt: 'Floor Plan 11', title: 'Floor Plan 11' },
+    { src: '/Images/Floor Plan (12).jpg', alt: 'Floor Plan 12', title: 'Floor Plan 12' },
+    { src: '/Images/Floor Plan (13).jpg', alt: 'Floor Plan 13', title: 'Floor Plan 13' },
+    { src: '/Images/Floor Plan (14).jpg', alt: 'Floor Plan 14', title: 'Floor Plan 14' }
+  ]
 
   const sectionImages = {
     blender: blenderImages,
