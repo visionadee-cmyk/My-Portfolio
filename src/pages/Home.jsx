@@ -42,6 +42,14 @@ function Home() {
 
   // Debug: Log image paths
   console.log('Featured Projects:', featuredProjects.map(p => ({ title: p.title, image: p.image })))
+  
+  // Debug: Test image loading
+  featuredProjects.forEach((project) => {
+    const img = new Image()
+    img.onload = () => console.log('✓ Loaded:', project.image)
+    img.onerror = (e) => console.error('✗ Failed:', project.image, e)
+    img.src = project.image
+  })
 
   const skills = [
     { name: 'Food & Beverage Management', level: 95, icon: 'fa-utensils' },
