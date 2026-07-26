@@ -5,12 +5,24 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: true
+    open: true,
+    fs: {
+      strict: false,
+      allow: ['..']
+    }
   },
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
   },
   publicDir: 'public',
-  base: '/'
+  base: '/',
+  optimizeDeps: {
+    exclude: ['old files']
+  }
 })
