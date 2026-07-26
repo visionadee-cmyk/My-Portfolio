@@ -40,8 +40,16 @@ function Home() {
     }
   ]
 
-  // Debug: Log image paths
+  // Debug: Log image paths and test loading
   console.log('Featured Projects:', featuredProjects.map(p => ({ title: p.title, image: p.image })))
+  
+  // Test if images can be loaded
+  featuredProjects.forEach((project, index) => {
+    const img = new Image()
+    img.onload = () => console.log(`✓ Image loaded successfully: ${project.image}`)
+    img.onerror = () => console.error(`✗ Image failed to load: ${project.image}`)
+    img.src = project.image
+  })
 
   const skills = [
     { name: 'Food & Beverage Management', level: 95, icon: 'fa-utensils' },
@@ -55,19 +63,19 @@ function Home() {
   const webApps = [
     {
       name: 'FreshTrack Pro',
-      image: '/Images/FRESH TRACK PRO.jpg',
+      image: '/Images/FRESH_TRACK_PRO.jpg',
       description: 'Inventory management system for F&B operations',
       category: 'Web Application'
     },
     {
       name: 'FurniCraft Pro',
-      image: '/Images/logo (5).jpg',
+      image: '/Images/logo_(5).jpg',
       description: 'Furniture design and customization tool',
       category: 'Design Tool'
     },
     {
       name: 'Pantry Recipe Pro',
-      image: '/Images/logo (7).jpg',
+      image: '/Images/logo_(7).jpg',
       description: 'Recipe management and meal planning app',
       category: 'Culinary App'
     }
@@ -216,8 +224,20 @@ function Home() {
           <div className="projects-grid">
             {featuredProjects.map((project, index) => (
               <Link key={index} to={project.path} className="project-card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
+                <div className="project-image" style={{ backgroundColor: '#ccc', minHeight: '220px' }}>
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+                    onError={(e) => {
+                      console.error('Image failed to load:', project.image, e)
+                      e.target.style.display = 'none'
+                    }}
+                    onLoad={(e) => {
+                      console.log('Image loaded in DOM:', project.image)
+                      e.target.style.backgroundColor = 'transparent'
+                    }}
+                  />
                   <div className="project-overlay">
                     <div className="project-icon">
                       <i className={`fas ${project.icon}`}></i>
