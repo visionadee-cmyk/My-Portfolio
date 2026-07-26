@@ -8,13 +8,13 @@ function Photography() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const landscapeImages = Array.from({ length: 152 }, (_, i) => ({
-    src: `/Images/Landscape (${i + 1}).jpg`,
+    src: `/Images/Landscape_(${i + 1}).jpg`,
     alt: `Landscape ${i + 1}`,
     title: `Landscape ${i + 1}`
   }))
 
   const portraitImages = Array.from({ length: 43 }, (_, i) => ({
-    src: `/Images/portrait (${i + 1}).jpg`,
+    src: `/Images/portrait_(${i + 1}).jpg`,
     alt: `Portrait ${i + 1}`,
     title: `Portrait ${i + 1}`
   }))

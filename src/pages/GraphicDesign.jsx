@@ -8,35 +8,35 @@ function GraphicDesign() {
   const [currentSection, setCurrentSection] = useState('logos')
 
   const logoImages = Array.from({ length: 17 }, (_, i) => ({
-    src: `/Images/logo (${i + 1}).jpg`,
+    src: `/Images/logo_(${i + 1}).jpg`,
     alt: `Logo ${i + 1}`,
     title: `Logo ${i + 1}`
   }))
 
   const floorPlanImages = [
-    { src: '/Images/Floor Plan (1).png', alt: 'Floor Plan 1', title: 'Floor Plan 1' },
-    { src: '/Images/Floor Plan (3).jpg', alt: 'Floor Plan 3', title: 'Floor Plan 3' },
-    { src: '/Images/Floor Plan (4).JPG', alt: 'Floor Plan 4', title: 'Floor Plan 4' },
-    { src: '/Images/Floor Plan (5).jpg', alt: 'Floor Plan 5', title: 'Floor Plan 5' },
-    { src: '/Images/Floor Plan (6).jpg', alt: 'Floor Plan 6', title: 'Floor Plan 6' },
-    { src: '/Images/Floor Plan (7).jpg', alt: 'Floor Plan 7', title: 'Floor Plan 7' },
-    { src: '/Images/Floor Plan (8).jpg', alt: 'Floor Plan 8', title: 'Floor Plan 8' },
-    { src: '/Images/Floor Plan (9).jpg', alt: 'Floor Plan 9', title: 'Floor Plan 9' },
-    { src: '/Images/Floor Plan (10).jpg', alt: 'Floor Plan 10', title: 'Floor Plan 10' },
-    { src: '/Images/Floor Plan (11).jpg', alt: 'Floor Plan 11', title: 'Floor Plan 11' },
-    { src: '/Images/Floor Plan (12).jpg', alt: 'Floor Plan 12', title: 'Floor Plan 12' },
-    { src: '/Images/Floor Plan (13).jpg', alt: 'Floor Plan 13', title: 'Floor Plan 13' },
-    { src: '/Images/Floor Plan (14).jpg', alt: 'Floor Plan 14', title: 'Floor Plan 14' }
+    { src: '/Images/Floor_Plan_(1).png', alt: 'Floor Plan 1', title: 'Floor Plan 1' },
+    { src: '/Images/Floor_Plan_(3).jpg', alt: 'Floor Plan 3', title: 'Floor Plan 3' },
+    { src: '/Images/Floor_Plan_(4).JPG', alt: 'Floor Plan 4', title: 'Floor Plan 4' },
+    { src: '/Images/Floor_Plan_(5).jpg', alt: 'Floor Plan 5', title: 'Floor Plan 5' },
+    { src: '/Images/Floor_Plan_(6).jpg', alt: 'Floor Plan 6', title: 'Floor Plan 6' },
+    { src: '/Images/Floor_Plan_(7).jpg', alt: 'Floor Plan 7', title: 'Floor Plan 7' },
+    { src: '/Images/Floor_Plan_(8).jpg', alt: 'Floor Plan 8', title: 'Floor Plan 8' },
+    { src: '/Images/Floor_Plan_(9).jpg', alt: 'Floor Plan 9', title: 'Floor Plan 9' },
+    { src: '/Images/Floor_Plan_(10).jpg', alt: 'Floor Plan 10', title: 'Floor Plan 10' },
+    { src: '/Images/Floor_Plan_(11).jpg', alt: 'Floor Plan 11', title: 'Floor Plan 11' },
+    { src: '/Images/Floor_Plan_(12).jpg', alt: 'Floor Plan 12', title: 'Floor Plan 12' },
+    { src: '/Images/Floor_Plan_(13).jpg', alt: 'Floor Plan 13', title: 'Floor Plan 13' },
+    { src: '/Images/Floor_Plan_(14).jpg', alt: 'Floor Plan 14', title: 'Floor Plan 14' }
   ]
 
   const flyerImages = Array.from({ length: 14 }, (_, i) => ({
-    src: `/Images/flyers (${i + 1}).jpg`,
+    src: `/Images/flyers_(${i + 1}).jpg`,
     alt: `Flyer ${i + 1}`,
     title: `Flyer ${i + 1}`
   }))
 
   const brochureImages = Array.from({ length: 24 }, (_, i) => ({
-    src: `/Images/brochures (${i + 1}).jpg`,
+    src: `/Images/brochures_(${i + 1}).jpg`,
     alt: `Brochure ${i + 1}`,
     title: `Brochure ${i + 1}`
   }))
@@ -46,7 +46,7 @@ function GraphicDesign() {
   ]
 
   const menuImages = Array.from({ length: 79 }, (_, i) => ({
-    src: `/Images/menus (${i + 1}).jpg`,
+    src: `/Images/menus_(${i + 1}).jpg`,
     alt: `Menu ${i + 1}`,
     title: `Menu ${i + 1}`
   }))

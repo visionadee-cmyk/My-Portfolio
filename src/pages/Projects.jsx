@@ -8,10 +8,10 @@ function Projects() {
       icon: 'fa-building',
       path: '/architecture-3d',
       images: [
-        '/Images/Blender Image (1).jpg',
-        '/Images/Blender Image (2).jpg',
-        '/Images/Blender Image (3).jpg',
-        '/Images/Floor Plan (1).png'
+        '/Images/Blender_Image_(1).jpg',
+        '/Images/Blender_Image_(2).jpg',
+        '/Images/Blender_Image_(3).jpg',
+        '/Images/Floor_Plan_(1).png'
       ],
       stats: { images: 53, videos: 1 }
     },
@@ -20,10 +20,10 @@ function Projects() {
       icon: 'fa-chalkboard-teacher',
       path: '/training',
       images: [
-        '/Images/International Womens Day (1).jpg',
-        '/Images/International Womens Day (2).jpg',
-        '/Images/International Womens Day (3).jpg',
-        '/Images/International Womens Day (4).jpg'
+        '/Images/International_Womens_Day_(1).jpg',
+        '/Images/International_Womens_Day_(2).jpg',
+        '/Images/International_Womens_Day_(3).jpg',
+        '/Images/International_Womens_Day_(4).jpg'
       ],
       stats: { images: 86 }
     },
@@ -33,9 +33,9 @@ function Projects() {
       path: '/videography',
       images: [
         '/Images/Audience.jpg',
-        '/Images/Sebs Map.jpg',
-        '/Images/Sebs farm.jpg',
-        '/Images/Ship wreck.jpg'
+        '/Images/Sebs_Map.jpg',
+        '/Images/Sebs_farm.jpg',
+        '/Images/Ship_wreck.jpg'
       ],
       stats: { videos: 12 }
     },
@@ -44,10 +44,10 @@ function Projects() {
       icon: 'fa-camera',
       path: '/photography',
       images: [
-        '/Images/Landscape (1).jpg',
-        '/Images/portrait (1).jpg',
-        '/Images/Landscape (2).jpg',
-        '/Images/portrait (2).jpg'
+        '/Images/Landscape_(1).jpg',
+        '/Images/portrait_(1).jpg',
+        '/Images/Landscape_(2).jpg',
+        '/Images/portrait_(2).jpg'
       ],
       stats: { images: 195 }
     },
@@ -56,10 +56,10 @@ function Projects() {
       icon: 'fa-palette',
       path: '/graphic-design',
       images: [
-        '/Images/logo (1).jpg',
-        '/Images/logo (5).jpg',
-        '/Images/flyers (1).jpg',
-        '/Images/brochures (1).jpg'
+        '/Images/logo_(1).jpg',
+        '/Images/logo_(5).jpg',
+        '/Images/flyers_(1).jpg',
+        '/Images/brochures_(1).jpg'
       ],
       stats: { images: 148 }
     }

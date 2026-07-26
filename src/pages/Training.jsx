@@ -7,7 +7,7 @@ function Training() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const trainingImages = Array.from({ length: 16 }, (_, i) => ({
-    src: `/Images/International Womens Day (${i + 1}).jpg`,
+    src: `/Images/International_Womens_Day_(${i + 1}).jpg`,
     alt: `Training Image ${i + 1}`,
     title: `Training Session ${i + 1}`
   }))
