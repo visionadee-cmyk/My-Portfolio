@@ -40,16 +40,8 @@ function Home() {
     }
   ]
 
-  // Debug: Log image paths and test loading
+  // Debug: Log image paths
   console.log('Featured Projects:', featuredProjects.map(p => ({ title: p.title, image: p.image })))
-  
-  // Test if images can be loaded
-  featuredProjects.forEach((project, index) => {
-    const img = new Image()
-    img.onload = () => console.log(`✓ Image loaded successfully: ${project.image}`)
-    img.onerror = () => console.error(`✗ Image failed to load: ${project.image}`)
-    img.src = project.image
-  })
 
   const skills = [
     { name: 'Food & Beverage Management', level: 95, icon: 'fa-utensils' },
@@ -224,20 +216,8 @@ function Home() {
           <div className="projects-grid">
             {featuredProjects.map((project, index) => (
               <Link key={index} to={project.path} className="project-card animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="project-image" style={{ backgroundColor: '#ccc', minHeight: '220px' }}>
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
-                    onError={(e) => {
-                      console.error('Image failed to load:', project.image, e)
-                      e.target.style.display = 'none'
-                    }}
-                    onLoad={(e) => {
-                      console.log('Image loaded in DOM:', project.image)
-                      e.target.style.backgroundColor = 'transparent'
-                    }}
-                  />
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
                   <div className="project-overlay">
                     <div className="project-icon">
                       <i className={`fas ${project.icon}`}></i>
