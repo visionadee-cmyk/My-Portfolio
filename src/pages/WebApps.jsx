@@ -5,7 +5,7 @@ function WebApps() {
     {
       name: 'Park BBQ Kitchen',
       description: 'Booking system for Park BBQ Kitchen events. Reserve the venue for your special occasions with easy online booking.',
-      image: 'https://parkbbqkitchen.hawadaily.com/logo.png',
+      image: 'https://parkbbqkitchen.hawadaily.com/logo/logo.jpeg',
       category: 'Booking System',
       features: ['Online Booking', 'Event Management', 'User Manual', 'FAQ Support'],
       status: 'Live',
@@ -14,7 +14,7 @@ function WebApps() {
     {
       name: 'Hawainn Khabaru',
       description: 'Modern Maldives news portal with full Dhivehi RTL support and PWA experience for the Maldivian community.',
-      image: 'https://ahdhamu-news.vercel.app/favicon.svg',
+      image: 'https://ahdhamu-news.vercel.app/logo.png',
       category: 'News & Media',
       features: ['Dhivehi RTL Support', 'PWA Experience', 'Modern Design', 'Daily Updates'],
       status: 'Live',
@@ -23,7 +23,7 @@ function WebApps() {
     {
       name: 'Maa Wadi Mv',
       description: 'Smart furniture planning tool with precise measurements, material optimization, and instant pricing for custom furniture.',
-      image: 'https://maa-wadi-mv.vercel.app/logo.png',
+      image: 'https://maa-wadi-mv.vercel.app/assets/logo.png',
       category: 'Design Tool',
       features: ['Material Optimization', 'Instant Pricing', 'Custom Designs', 'Quote Generation'],
       status: 'Live',
@@ -50,7 +50,7 @@ function WebApps() {
     {
       name: 'Ungu Viyafaari',
       description: 'Business management system for comprehensive business operations and administration.',
-      image: 'https://ungu-viyafaari-mv.vercel.app/favicon.svg',
+      image: 'https://ungu-viyafaari-mv.vercel.app/logo.png',
       category: 'Business Management',
       features: ['Business Operations', 'Administration', 'PWA Support', 'Modern UI'],
       status: 'Live',
