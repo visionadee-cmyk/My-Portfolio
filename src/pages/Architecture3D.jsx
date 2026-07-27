@@ -75,7 +75,7 @@ function Architecture3D() {
             <div className="video-container animate-fade-in">
               <div className="video-wrapper">
                 <video controls>
-                  <source src="/video/New Normal dining.mov" type="video/mp4" />
+                  <source src="/video/New_Normal_dining.mov" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

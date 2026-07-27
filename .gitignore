@@ -24,12 +24,12 @@ build/
 Thumbs.db
 
 # Large media files
-*.mp4
-*.mov
-*.avi
-*.wmv
-*.flv
-*.mkv
+# *.mp4
+# *.mov
+# *.avi
+# *.wmv
+# *.flv
+# *.mkv
 
 # Backup files
 *.bak
@@ -49,10 +49,10 @@ logs/
 *.7z
 
 # Directories
-video/
-public/video/*.mp4
-public/video/*.mov
-public/video/*.avi
+# video/
+# public/video/*.mp4
+# public/video/*.mov
+# public/video/*.avi
 
 # Logs
 firebase-debug.log
