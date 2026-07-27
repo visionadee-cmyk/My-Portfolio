@@ -3,7 +3,20 @@
   "outputDirectory": "dist",
   "headers": [
     {
-      "source": "/video/(.*)",
+      "source": "/video/(.*)\\.mov",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "video/quicktime"
+        },
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
+      ]
+    },
+    {
+      "source": "/video/(.*)\\.mp4",
       "headers": [
         {
           "key": "Content-Type",
