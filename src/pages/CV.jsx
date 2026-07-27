@@ -323,10 +323,10 @@ function CV() {
               </div>
               <h3>Download Full CV</h3>
               <p>Get the complete version of my CV in PDF format with detailed work history and references.</p>
-              <button className="btn btn-primary">
+              <a href="/CV_Abdul_Rahman_Resume_26_April_2026.pdf" download className="btn btn-primary">
                 <i className="fas fa-download"></i>
                 Download PDF
-              </button>
+              </a>
             </div>
           </section>
         </div>

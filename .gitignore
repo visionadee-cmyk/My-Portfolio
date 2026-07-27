@@ -43,7 +43,7 @@ logs/
 # Large images
 *.psd
 *.ai
-*.pdf
+# *.pdf
 *.zip
 *.rar
 *.7z
