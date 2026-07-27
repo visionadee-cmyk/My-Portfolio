@@ -4,13 +4,13 @@ import './ContentCreator.css'
 function ContentCreator() {
   const contentItems = [
     {
-      image: '/Images/website images/3D_architecture.jpg',
+      image: '/Images/Blender_Image_(1).jpg',
       title: '3D Architectural Design',
       description: 'Visualizing spaces with Blender & CorelDRAW',
       link: '/architecture-3d'
     },
     {
-      image: '/Images/website images/Graphic_Design.jpg',
+      image: '/Images/logo_(1).jpg',
       title: 'Graphic Design Services',
       description: 'Logos, banners, and marketing materials',
       link: '/graphic-design'
@@ -22,13 +22,13 @@ function ContentCreator() {
       link: '/webapps'
     },
     {
-      image: '/Images/website images/Videography.png',
+      image: '/Images/Audience.jpg',
       title: 'Engaging Videography',
       description: 'Showcasing events and experiences',
       link: '/videography'
     },
     {
-      image: '/Images/website images/Photography.jpg',
+      image: '/Images/Landscape_(1).jpg',
       title: 'Creative Photography',
       description: 'Landscapes, portraits, and event captures',
       link: '/photography'
@@ -43,37 +43,37 @@ function ContentCreator() {
 
   const externalProjects = [
     {
-      image: '/Images/website images/60_independence.png',
+      image: '/Images/banners.jpg',
       title: 'Maldivian Independence Site',
       description: 'Website for the 60th Anniversary',
       externalLink: '#'
     },
     {
-      image: '/Images/website images/whistle_Blower.png',
+      image: '/Images/SSOM.jpg',
       title: 'Whistleblower Protection Site',
       description: 'Secure platform for reporting',
       externalLink: '#'
     },
     {
-      image: '/Images/website images/Ungu_Viyafaari.png',
+      image: '/Images/Sebs_Shack.png',
       title: 'Ungu Viyafaari',
       description: 'Online marketplace platform',
       externalLink: 'https://un-gu-viyafaari.web.app'
     },
     {
-      image: '/Images/website images/Gaahaka.png',
+      image: '/Images/Sebs_farm.jpg',
       title: 'Gaaahaka Returns 1446',
       description: 'Festival ticketing system',
       externalLink: 'https://gaahaka-returns-1446.web.app/'
     },
     {
-      image: '/Images/website images/Island_Sprint_Pro.jpg',
+      image: '/Images/Worldbuilding-Mindmap.jpg',
       title: 'Fuel Express Time & Attendance',
       description: 'Time and attendance tracking system',
       externalLink: 'https://fuel-express-time-attendance.web.app/dashboard.html'
     },
     {
-      image: '/Images/website images/Junior_Joy_Hr_Pro.jpg',
+      image: '/Images/Rettey_(1).jpg',
       title: 'Junior Joy HR Pro',
       description: 'Happy Teams, Smarter HR',
       externalLink: 'https://juniorjoy-hr-pro.netlify.app/'
