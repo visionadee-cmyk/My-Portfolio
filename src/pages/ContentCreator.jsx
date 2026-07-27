@@ -114,7 +114,7 @@ function ContentCreator() {
       title: 'Hawwa Sales',
       description: '🇲🇻 Your trusted online shop for authentic products! From crafts to fashion, we deliver quality with island charm. Order via WhatsApp: +960 979-5529. Free delivery in Malé!',
       link: 'https://www.facebook.com/profile.php?id=61575611513593',
-      image: null
+      image: 'https://scontent.fmle2-2.fna.fbcdn.net/v/t39.30808-6/491700553_9639329329493515_115437734763808341_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1154&ctp=s2048x1154&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OQjKe7Wcr7IQ7kNvwFzWFDe&_nc_oc=AdpEzTdK38AUMFUoKfP9EOius3pyrSSsspEwxPEbxF4sz1Im7t39BbVtWWw99owbL5I&_nc_zt=23&_nc_ht=scontent.fmle2-2.fna&_nc_gid=Nsb2wn6Jwae1Q2lZiQeIng&_nc_ss=7b2a8&oh=00_AQAXJvVf1deSE6D4jDBqjkVdfid4DcdocYyGKHfABrZQ5A&oe=6A6CECB0'
     },
     {
       id: '61591869200851',
@@ -253,15 +253,17 @@ function ContentCreator() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {page.image ? (
-                  <div className="facebook-image">
-                    <img src={page.image} alt={page.title} loading="lazy" />
-                  </div>
-                ) : (
-                  <div className="facebook-icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </div>
-                )}
+                <div className="facebook-card-header">
+                  {page.image ? (
+                    <div className="facebook-image">
+                      <img src={page.image} alt={page.title} loading="lazy" />
+                    </div>
+                  ) : (
+                    <div className="facebook-icon">
+                      <i className="fab fa-facebook-f"></i>
+                    </div>
+                  )}
+                </div>
                 <div className="facebook-content">
                   <h4>{page.title}</h4>
                   <p>{page.description}</p>
