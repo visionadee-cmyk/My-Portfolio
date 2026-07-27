@@ -254,6 +254,20 @@
   flex-shrink: 0;
 }
 
+.facebook-image {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.facebook-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .facebook-content {
   flex: 1;
 }
