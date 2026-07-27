@@ -31,15 +31,14 @@
 }
 
 .achievement-card {
-  background: var(--surface);
+  background: white;
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-2xl);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border);
+  padding: var(--spacing-xl);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: none;
   transition: all var(--transition-base);
   position: relative;
-  overflow: visible;
-  min-height: 220px;
+  overflow: hidden;
 }
 
 .achievement-card::before {
@@ -96,12 +95,10 @@
 }
 
 .achievement-card p {
-  font-size: 1rem;
-  color: var(--text-primary);
-  line-height: 1.7;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
   margin-bottom: var(--spacing-md);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .achievement-year {
