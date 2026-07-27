@@ -486,7 +486,7 @@ function Home() {
         <div className="container">
           <div className="kuredu-card animate-fade-in">
             <div className="kuredu-image">
-              <img src="/Images/Rettey (6).jpg" alt="Featured on Kuredu" />
+              <img src="/Images/Rettey_(6).jpg" alt="Featured on Kuredu" />
             </div>
             <div className="kuredu-content">
               <div className="kuredu-badge">

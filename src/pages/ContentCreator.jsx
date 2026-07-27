@@ -4,37 +4,37 @@ import './ContentCreator.css'
 function ContentCreator() {
   const contentItems = [
     {
-      image: '/Images/website images/3D architecture.optimized.jpg',
+      image: '/Images/website images/3D_architecture.jpg',
       title: '3D Architectural Design',
       description: 'Visualizing spaces with Blender & CorelDRAW',
       link: '/architecture-3d'
     },
     {
-      image: '/Images/website images/Graphic Design.optimized.jpg',
+      image: '/Images/website images/Graphic_Design.jpg',
       title: 'Graphic Design Services',
       description: 'Logos, banners, and marketing materials',
       link: '/graphic-design'
     },
     {
-      image: '/Images/FRESH TRACK PRO.optimized.jpg',
+      image: '/Images/FRESH_TRACK_PRO.jpg',
       title: 'FreshTrack Pro Web App',
       description: 'Produce business management system',
       link: '/webapps'
     },
     {
-      image: '/Images/website images/Videography.optimized.png',
+      image: '/Images/website images/Videography.png',
       title: 'Engaging Videography',
       description: 'Showcasing events and experiences',
       link: '/videography'
     },
     {
-      image: '/Images/website images/Photography.optimized.jpg',
+      image: '/Images/website images/Photography.jpg',
       title: 'Creative Photography',
       description: 'Landscapes, portraits, and event captures',
       link: '/photography'
     },
     {
-      image: '/Images/International Womens Day (11).optimized.jpg',
+      image: '/Images/International_Womens_Day_(11).jpg',
       title: 'Content Creation',
       description: 'Engaging digital content and storytelling',
       link: '/projects'
@@ -43,19 +43,19 @@ function ContentCreator() {
 
   const externalProjects = [
     {
-      image: '/Images/website images/60 independence.png',
+      image: '/Images/website images/60_independence.png',
       title: 'Maldivian Independence Site',
       description: 'Website for the 60th Anniversary',
       externalLink: '#'
     },
     {
-      image: '/Images/website images/whistle Blower.png',
+      image: '/Images/website images/whistle_Blower.png',
       title: 'Whistleblower Protection Site',
       description: 'Secure platform for reporting',
       externalLink: '#'
     },
     {
-      image: '/Images/website images/Ungu Viyafaari.png',
+      image: '/Images/website images/Ungu_Viyafaari.png',
       title: 'Ungu Viyafaari',
       description: 'Online marketplace platform',
       externalLink: 'https://un-gu-viyafaari.web.app'
@@ -67,13 +67,13 @@ function ContentCreator() {
       externalLink: 'https://gaahaka-returns-1446.web.app/'
     },
     {
-      image: '/Images/website images/Island Sprint Pro.jpg',
+      image: '/Images/website images/Island_Sprint_Pro.jpg',
       title: 'Fuel Express Time & Attendance',
       description: 'Time and attendance tracking system',
       externalLink: 'https://fuel-express-time-attendance.web.app/dashboard.html'
     },
     {
-      image: '/Images/website images/Junior Joy Hr Pro.jpg',
+      image: '/Images/website images/Junior_Joy_Hr_Pro.jpg',
       title: 'Junior Joy HR Pro',
       description: 'Happy Teams, Smarter HR',
       externalLink: 'https://juniorjoy-hr-pro.netlify.app/'
