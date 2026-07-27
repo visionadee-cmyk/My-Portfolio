@@ -33,12 +33,17 @@
 .achievement-card {
   background: white;
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-2xl);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   border: none;
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 280px;
 }
 
 .achievement-card::before {
@@ -63,16 +68,17 @@
 }
 
 .achievement-icon {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.5rem;
-  margin-bottom: var(--spacing-md);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-lg);
+  flex-shrink: 0;
 }
 
 .achievement-category {
@@ -83,14 +89,14 @@
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 600;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 
 .achievement-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   letter-spacing: -0.3px;
 }
 
@@ -98,13 +104,15 @@
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  flex: 1;
 }
 
 .achievement-year {
   font-size: 0.85rem;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: auto;
 }
 
 /* Certifications Section */
