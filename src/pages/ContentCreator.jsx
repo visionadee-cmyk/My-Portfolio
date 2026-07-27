@@ -80,6 +80,39 @@ function ContentCreator() {
     }
   ]
 
+  const facebookPages = [
+    {
+      id: '61591869200851',
+      title: 'JoyfulReCreative',
+      description: 'T-shirts, mugs & more!',
+      link: 'https://www.facebook.com/profile.php?id=61591869200851'
+    },
+    {
+      id: '61575611513593',
+      title: 'Creative Hub',
+      description: 'Digital content & design',
+      link: 'https://www.facebook.com/profile.php?id=61575611513593'
+    },
+    {
+      id: '61591447331907',
+      title: 'Design Studio',
+      description: 'Professional design services',
+      link: 'https://www.facebook.com/profile.php?id=61591447331907'
+    },
+    {
+      id: '61591142210184',
+      title: 'Content Creator',
+      description: 'Engaging digital storytelling',
+      link: 'https://www.facebook.com/profile.php?id=61591142210184'
+    },
+    {
+      id: '61590504496612',
+      title: 'Portfolio Showcase',
+      description: 'Featured works & projects',
+      link: 'https://www.facebook.com/profile.php?id=61590504496612'
+    }
+  ]
+
   return (
     <div className="content-creator-page">
       <div className="container">
@@ -155,6 +188,31 @@ function ContentCreator() {
                     <p>{item.description}</p>
                     <span className="view-more-cta">Visit Site <i className="fas fa-external-link-alt"></i></span>
                   </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="facebook-section">
+          <h2 className="section-title">Facebook Pages</h2>
+          <div className="facebook-grid">
+            {facebookPages.map((page, index) => (
+              <a 
+                key={index} 
+                href={page.link} 
+                className="facebook-card animate-fade-in" 
+                style={{ animationDelay: `${index * 0.1}s` }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="facebook-icon">
+                  <i className="fab fa-facebook-f"></i>
+                </div>
+                <div className="facebook-content">
+                  <h4>{page.title}</h4>
+                  <p>{page.description}</p>
+                  <span className="facebook-cta">Visit Page <i className="fas fa-external-link-alt"></i></span>
                 </div>
               </a>
             ))}

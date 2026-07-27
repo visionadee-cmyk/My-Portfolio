@@ -211,6 +211,75 @@
   color: var(--accent);
 }
 
+.facebook-section {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.facebook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.facebook-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: all var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+}
+
+.facebook-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: #1877f2;
+}
+
+.facebook-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #1877f2 0%, #42b72a 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.facebook-content {
+  flex: 1;
+}
+
+.facebook-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.facebook-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.facebook-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1877f2;
+}
+
 @media (max-width: 768px) {
   .platform-grid {
     grid-template-columns: 1fr;
@@ -219,6 +288,10 @@
   .content-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+  }
+
+  .facebook-grid {
+    grid-template-columns: 1fr;
   }
 
   .stats {
@@ -239,5 +312,16 @@
 
   .content-overlay p {
     font-size: 0.85rem;
+  }
+
+  .facebook-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facebook-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 1.75rem;
   }
 }
