@@ -14,10 +14,19 @@ function Architecture3D() {
   }))
 
   const sketchUpImages = [
-    { src: '/Images/Blender_Image_(1).jpg', alt: 'SketchUp Project 1', title: 'SketchUp Project 1' },
-    { src: '/Images/Blender_Image_(2).jpg', alt: 'SketchUp Project 2', title: 'SketchUp Project 2' },
-    { src: '/Images/Blender_Image_(3).jpg', alt: 'SketchUp Project 3', title: 'SketchUp Project 3' },
-    { src: '/Images/Blender_Image_(4).jpg', alt: 'SketchUp Project 4', title: 'SketchUp Project 4' }
+    { src: '/Images/Floor_Plan_(1).png', alt: 'SketchUp Project 1', title: 'SketchUp Project 1' },
+    { src: '/Images/Floor_Plan_(3).jpg', alt: 'SketchUp Project 2', title: 'SketchUp Project 2' },
+    { src: '/Images/Floor_Plan_(4).JPG', alt: 'SketchUp Project 3', title: 'SketchUp Project 3' },
+    { src: '/Images/Floor_Plan_(5).jpg', alt: 'SketchUp Project 4', title: 'SketchUp Project 4' },
+    { src: '/Images/Floor_Plan_(6).jpg', alt: 'SketchUp Project 5', title: 'SketchUp Project 5' },
+    { src: '/Images/Floor_Plan_(7).jpg', alt: 'SketchUp Project 6', title: 'SketchUp Project 6' },
+    { src: '/Images/Floor_Plan_(8).jpg', alt: 'SketchUp Project 7', title: 'SketchUp Project 7' },
+    { src: '/Images/Floor_Plan_(9).jpg', alt: 'SketchUp Project 8', title: 'SketchUp Project 8' },
+    { src: '/Images/Floor_Plan_(10).jpg', alt: 'SketchUp Project 9', title: 'SketchUp Project 9' },
+    { src: '/Images/Floor_Plan_(11).jpg', alt: 'SketchUp Project 10', title: 'SketchUp Project 10' },
+    { src: '/Images/Floor_Plan_(12).jpg', alt: 'SketchUp Project 11', title: 'SketchUp Project 11' },
+    { src: '/Images/Floor_Plan_(13).jpg', alt: 'SketchUp Project 12', title: 'SketchUp Project 12' },
+    { src: '/Images/Floor_Plan_(14).jpg', alt: 'SketchUp Project 13', title: 'SketchUp Project 13' }
   ]
 
   const corelDrawImages = [
