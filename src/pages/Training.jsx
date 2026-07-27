@@ -30,7 +30,23 @@ function Training() {
         </div>
 
         <div className="training-section">
-          <h2 className="section-title">Multiple Training Sessions</h2>
+          <h2 className="section-title">Training Videos</h2>
+          <div className="video-container animate-fade-in">
+            <div className="video-wrapper">
+              <video controls>
+                <source src="/video/sc1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="video-info">
+              <h3>Self Confidence - Module 1 (Alt)</h3>
+              <p>Staff training session for professional development</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="training-section">
+          <h2 className="section-title">Training Sessions Gallery</h2>
           <div className="gallery">
             {trainingImages.map((image, index) => (
               <div key={index} className="gallery-item animate-scale-in" style={{ animationDelay: `${index * 0.03}s` }}>
