@@ -25,7 +25,7 @@ function Header() {
         <nav className="nav">
           <Link to="/" className="logo">
             <div className="logo-icon">
-              <span className="logo-text">RG</span>
+              <img src="/personal-docs/Rettey_(8).jpg" alt="Logo" className="logo-image" />
             </div>
             <div className="logo-text-container">
               <span className="logo-name">Abdul Rahman</span>
