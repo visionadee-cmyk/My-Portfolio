@@ -13,6 +13,7 @@ import Videography from './pages/Videography'
 import Architecture3D from './pages/Architecture3D'
 import GraphicDesign from './pages/GraphicDesign'
 import ContentCreator from './pages/ContentCreator'
+import PersonalDocuments from './pages/PersonalDocuments'
 import './App.css'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/architecture-3d" element={<Architecture3D />} />
             <Route path="/graphic-design" element={<GraphicDesign />} />
             <Route path="/content-creator" element={<ContentCreator />} />
+            <Route path="/personal-documents" element={<PersonalDocuments />} />
           </Routes>
         </main>
         <Footer />

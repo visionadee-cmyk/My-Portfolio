@@ -16,6 +16,7 @@ function Header() {
     { path: '/cv', label: 'CV', icon: 'fa-file-alt' },
     { path: '/webapps', label: 'Apps', icon: 'fa-mobile-alt' },
     { path: '/content-creator', label: 'Content', icon: 'fa-bullhorn' },
+    { path: '/personal-documents', label: 'Documents', icon: 'fa-folder' },
   ]
 
   return (
